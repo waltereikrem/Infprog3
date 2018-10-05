@@ -50,16 +50,16 @@ nav a:hover {
 }
 
 a::before {
-  content: '';
-  background-image: url('walter.png');
-  background-position: 0 30%;
+  content: ''; /*cheaky liten "placeholder"*/
+  background-image: url('walter.png'); /*mitt grelle ansikt*/
+  background-position: 0 30%; /*hvor den starter og hvor høyt den slutter*/
   background-repeat: no-repeat;
   background-size: 50%;
-  height: 48vh; /* verdi som bestemmer hvor høyt bildet skal skli opp*/
-  left: 0;
+  height: 48vh; /* verdi som bestemmer hvor høyt bilde regnes som et overlay og ikke kan klikkes gjennom*/
+  left: 0; /*så det er helt klistret til siden av skjermen*/
   position: absolute;
   bottom: 0vh;
-  width: 60vw; /* hvor lagt ut til siden bilde regnes som ett overlay og ikke kan klikkes gjennom*/
+  width: 60vw; /* hvor lagt ut til siden bilde regnes som et overlay og ikke kan klikkes gjennom*/
   transform: translateY(100%);
   transition: transform .3s;
 }
@@ -68,33 +68,8 @@ a:hover::before {
   transform: translateY(0px);
 }
 
-/*
-@media screen and (min-width: 500px) {
-  body {
-    grid-template-columns: 250px 2fr .5em;
-  }
 
-  a::before {
-    background-position: 0;
-    background-size: 250px;
-    height: 200px;
-    transform: translateY(200px);
-  }
-}
-
-@media screen and (min-width: 700px) {
-  body {
-    grid-template-columns: 350px 2fr 15px;
-  }
-
-  a::before {
-    background-size: 300px;
-    height: 250px;
-    transform: translateY(250px);
-  }
-} */
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) /*pga noen har bittesmå steinalter laptops*/ {
   body {
     display: flex;
     justify-content: center;
