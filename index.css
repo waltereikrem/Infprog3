@@ -1,0 +1,102 @@
+* {
+  font-family: Roboto, helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  zoom: 0.9;
+}
+
+body { /*artig liten grid/flex hack for å "nesten" midtstille men ha god plass til bildet under*/
+  background-image: url(bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: grid;
+  font-size: 1.5em;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-right: 5px solid #3881ff;
+  color: #FFF;
+}
+
+header p{
+  color: #3881ff;
+  letter-spacing: 0.26em;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 35px;
+  text-align: center;
+}
+
+nav a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 42px;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  color: #3881ff;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid
+}
+
+a::before {
+  content: '';
+  background-image: url('walter.png');
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 48vh; /* verdi som bestemmer hvor høyt bildet skal skli opp*/
+  left: 0;
+  position: absolute;
+  bottom: 0vh;
+  width: 60vw; /* hvor lagt ut til siden bilde regnes som ett overlay og ikke kan klikkes gjennom*/
+  transform: translateY(100%);
+  transition: transform .3s;
+}
+
+a:hover::before {
+  transform: translateY(0px);
+}
+
+/*
+@media screen and (min-width: 500px) {
+  body {
+    grid-template-columns: 250px 2fr .5em;
+  }
+
+  a::before {
+    background-position: 0;
+    background-size: 250px;
+    height: 200px;
+    transform: translateY(200px);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    grid-template-columns: 350px 2fr 15px;
+  }
+
+  a::before {
+    background-size: 300px;
+    height: 250px;
+    transform: translateY(250px);
+  }
+} */
+
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
