@@ -1,0 +1,64 @@
+*{
+  font-family: helvetica, sans-serif;
+  color: #FFF;
+}
+
+.hjem{
+  text-decoration: none;
+}
+.hjem:hover{
+  text-decoration: underline;
+  color: rgb(135, 109, 242);
+}
+
+body{
+  background-image: url(bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header{
+  width: 800px;
+  margin:auto;
+  border-top: 5px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  clear: both;
+  padding: 10px;
+}
+
+.knapper{
+  width: 800px;
+  margin:auto;
+  text-align: center;
+  padding: 15px;
+}
+
+button{
+  background-color: rgb(135, 109, 242);
+  border: 2px solid rgb(40, 38, 48);
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.brukerinput{
+  border-radius: 5px;
+  padding: 5px;
+  color: Black;
+}
+
+button:hover{
+  background-color: rgb(165, 151, 229);
+  border: 2px solid rgb(135, 109, 242);
+  cursor: pointer;
+}
+
+.arrayer{
+  width: 800px;
+  margin:auto;
+  padding: 10px;
+  border: 5px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
