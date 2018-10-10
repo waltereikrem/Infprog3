@@ -14,9 +14,6 @@ function oppstart() {
   document.getElementById("minBtn").onclick = minsteTall;
   document.getElementById("brukerBtn").onclick = brukertall;
   document.getElementById("antallBrukerBtn").onclick = antallBruker;
-
-
-
 }
 
 // skriver ut arrayen
