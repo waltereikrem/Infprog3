@@ -12,7 +12,7 @@ function genererBrev() {
     var img = document.createElement("img");
 
     // plukker ut alle tegn som ble funnet og tildeler de en ".jpg" og skriver ut som et bildeelement med ("verdi".jpg)
-    img.src = txtUser.charAt(i) + ".jpg"
+    img.src = txtUser.charAt(i) + ".jpg";
     var src = document.getElementById("utskrift");
     src.appendChild(img);
   }
